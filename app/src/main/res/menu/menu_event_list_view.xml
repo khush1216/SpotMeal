@@ -1,0 +1,51 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.spotmeal.EventListView">
+
+    <item android:id="@+id/search"
+        android:title="@string/search_title"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView" />
+
+    <item
+        android:id="@+id/home"
+        android:orderInCategory="100"
+        android:title="@string/home"
+        app:showAsAction="always"
+        android:icon="@drawable/home_icon"/>
+
+    <item
+        android:id="@+id/profile_settings"
+        android:orderInCategory="100"
+        android:title="@string/profile_settings"
+        app:showAsAction="always"
+        android:icon="@drawable/profile_icon">
+        <menu>
+            <item
+                android:id="@+id/edit_profile"
+                android:title="@string/edit_profile"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/reviews"
+                android:title="@string/reviews"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/upcoming_events"
+                android:title="@string/upcoming_events"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/become_host"
+                android:title="@string/become_host"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/logout"
+                android:title="@string/logout"
+                app:showAsAction="never"/>
+        </menu>
+
+    </item>
+
+
+
+</menu>
